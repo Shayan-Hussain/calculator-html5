@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" class="screen" name="display" id="display">
+            <input type="button" class="btn AC" placeholder="AC" value="AC" onclick="ac()">
+            <input type="button" class="btn backspace" placeholder="Delete" value="Delete" onclick="del()">
+            <input type="button" class="btn divide"  placeholder="/" value="÷" onclick="input_display('/')">
+            <input type="button" class="btn n9" placeholder="9" value="9" onclick="input_display('9')">
+            <input type="button" class="btn n8" placeholder="8" value="8" onclick="input_display('8')">
+            <input type="button" class="btn n7" placeholder="7" value="7" onclick="input_display('7')">
+            <input type="button" class="btn multiply" placeholder="x" value="x" onclick="input_display('*')">
+            <input type="button" class="btn n6" placeholder="6" value="6" onclick="input_display('6')">
+            <input type="button" class="btn n5" placeholder="5" value="5" onclick="input_display('5')">
+            <input type="button" class="btn n4" placeholder="4" value="4" onclick="input_display('4')">
+            <input type="button" class="btn add" placeholder="+" value="+" onclick="input_display('+')">
+            <input type="button" class="btn n3" placeholder="3" value="3" onclick="input_display('3')">
+            <input type="button" class="btn n2" placeholder="2" value="2" onclick="input_display('2')">
+            <input type="button" class="btn n1" placeholder="1" value="1" onclick="input_display('2')">
+            <input type="button" class="btn sub" placeholder="-" value="-" onclick="input_display('-')">
+            <input type="button" class="btn decimal" placeholder="." value="." onclick="input_display('.')">
+            <input type="button" class="btn n0" placeholder="0" value="0" onclick="input_display('0')">
+            <input type="button" class="btn equals" placeholder="=" value="=" onclick="solve()">
+        </div>
+    </div>
+</body>
+</html>
