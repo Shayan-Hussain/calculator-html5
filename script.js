@@ -5,7 +5,12 @@ function ac() {
     document.getElementById("display").value = "";
 }
 function input_display(val) {
-    document.getElementById("display").value += val;
+    if(document.getElementById("display").value.length < 9) {
+        document.getElementById("display").value += val;
+    }
+    else {
+        alert("You can not enter more than 9 digits.")
+    }
 }
 
 function del() {
